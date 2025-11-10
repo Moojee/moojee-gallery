@@ -149,14 +149,4 @@ export const artworks = [
     description: "Kenma - Hykuu"
   },
 
-
-
-  // ใช้รูปจาก Public Folder
-  // {
-  //   id: 1,
-  //   title: "Abstract Dreams",
-  //   image: "/images/artwork1.jpg", // path เริ่มจาก /
-  //   // ...
-  // }
-
 ];
