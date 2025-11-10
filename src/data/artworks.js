@@ -3,13 +3,15 @@
  * แก้ไขข้อมูลตรงนี้เพื่อเพิ่ม/ลบ/แก้ไขผลงาน
  */
 
+import Bell from "../assets/art/S__31588365_0.jpg";
+
 export const artworks = [
   {
     id: 1,
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
   {
@@ -17,7 +19,7 @@ export const artworks = [
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
   {
@@ -25,7 +27,7 @@ export const artworks = [
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
   {
@@ -33,7 +35,7 @@ export const artworks = [
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
   {
@@ -41,7 +43,7 @@ export const artworks = [
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
   {
@@ -49,7 +51,7 @@ export const artworks = [
     title: "Bell",
     medium: "Canvas, Acrylic",
     year: "2022",
-    image: "/public/S__31588365_0.jpg",
+    image: Bell,
     description: "รักเบว"
   },
 
