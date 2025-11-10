@@ -26,15 +26,15 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto px-6 py-4">
         {/* โลโก้/ชื่อ */}
-        <div className="text-2xl font-bold text-gray-500"> Moojee Gallery Art </div>
+        <div className="text-2xl font-bold text-gray-500">  </div>
 
         {/* เมนูสำหรับหน้าจอใหญ่ */}
         <div className="hidden md:flex gap-8 text-gray-500 font-medium">
           <a href="#portfolio" className="hover:text-black transition-colors">
-            ผลงาน
+            Art
           </a>
           <a href="#about" className="hover:text-black transition-colors">
-            เกี่ยวกับ
+            About
           </a>
 
         </div>
