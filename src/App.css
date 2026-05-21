@@ -1,42 +1,92 @@
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* ============================================================
+   App.css / index.css  — Moojee Art Gallery · Museum Theme
+   ============================================================ */
 
-  
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 12s ease infinite;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes brushFade {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.05);
-  }
+body {
+  background-color: #f6f4f2;
+  color: #2f2a26;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
 }
 
-@keyframes moveBrush {
-  from { transform: translateY(-10px); }
-  to   { transform: translateY(10px); }
+/* ── CSS Variables ── */
+:root {
+  --color-bg:        #f6f4f2;
+  --color-bg-warm:   #f0ede9;
+  --color-bg-dark:   #2f2a26;
+  --color-bg-darker: #1e1b18;
+  --color-ink:       #2f2a26;
+  --color-ink-mid:   #5a5248;
+  --color-ink-soft:  #7a6e65;
+  --color-ink-faint: #9a8e84;
+  --color-gold:      #c9a96e;
+  --color-gold-lt:   #e8d5b7;
+
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.animate-brush {
-  animation: brushFade 1.2s ease-out forwards;
+/* ── Typography helpers ── */
+.font-serif { font-family: var(--font-serif); }
+.font-sans  { font-family: var(--font-sans); }
+
+/* ── Scroll bar styling ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 2px; }
+
+/* ── Selection ── */
+::selection {
+  background: rgba(201, 169, 110, 0.25);
+  color: var(--color-ink);
 }
 
+/* ── Focus visible ── */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* ── Image defaults ── */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Utility: gold divider ── */
+.gold-rule {
+  width: 48px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+/* ── Page transition shimmer (optional) ── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #ede9e4 25%, #f6f4f2 50%, #ede9e4 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}

@@ -8,9 +8,7 @@ import Footer from './components/Footer';
 import ArtworkModal from './components/ArtworkModal';
 import './App.css';
 
-/**
- * Main App Component - Component หลักที่รวมทุกส่วนเข้าด้วยกัน
- */
+
 function App() {
   // State สำหรับควบคุมเมนูมือถือ
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +20,7 @@ function App() {
    * ฟังก์ชันเลื่อนไปยังส่วนผลงาน
    */
   const scrollToGallery = () => {
-    // ใน Gallery เราจะตั้ง id="portfolio" ไว้แล้ว
+    // id="portfolio" 
     const element = document.getElementById('portfolio');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
